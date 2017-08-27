@@ -1,0 +1,5 @@
+FROM gcc:4.9
+COPY . /SSL-Client
+WORKDIR /SSL-Client
+RUN gcc -Wall -o SSL-Client SSL-Client.c -lssl -lcrypto -ldl
+ENTRYPOINT ["./SSL-Client", "172.17.0.2", "5000"] 

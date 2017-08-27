@@ -1,0 +1,7 @@
+FROM gcc:4.9
+COPY . /SSL-Server
+WORKDIR /SSL-Server
+RUN gcc -Wall -o SSL-Server SSL-Server.c -lssl -lcrypto -ldl
+ENTRYPOINT ["./SSL-Server", "5000"] 
+#CMD ["./SSL-Server"] 
+
