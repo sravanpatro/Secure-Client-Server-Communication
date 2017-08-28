@@ -51,7 +51,10 @@ $ sudo systemctl status docker
 
     docker version
     docker run hello-world
-Once docker is successfully installed, then run the server_start.sh script to start the server in docker
+Once docker is successfully installed, then run the server script to start the server in docker
+             
+    ./server_start.sh
+    Please refer the script for the details of server start
 
 Client can be run 
 
