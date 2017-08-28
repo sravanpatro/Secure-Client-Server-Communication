@@ -1,5 +1,5 @@
 # Secure-Client-Server-Communication
-Secure SSL connection between client and server using openssl with dockerization
+Secure SSL connection between client and server using openssl TLSv1.2 with dockerization
 
 First generate a self-signed certificate using the following command
 
