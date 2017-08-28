@@ -55,6 +55,15 @@ Once docker is successfully installed, then run the server_start.sh script to st
 
 Client can be run 
 
+    gcc -Wall -o SSL-Client SSL-Client.c -lssl -lcrypto -ldl
+    ./SSL-Client <hostname> <portno>
+    Note: Server is running inside the docker. So to get the hostname do 
+    docker inspect <server container-id> | grep -i ipaddress
+    
+Alternately client can also run in docker. 
+ 
+    ./client_start.sh 
+
 
 
 
